@@ -1,0 +1,73 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.card--wrapper {
+  display: flex;
+  padding: 20px;
+  margin: 10px 0;
+  gap: 20px;
+}
+.card--right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.location-img {
+  border-radius: 10px;
+}
+
+.card--title {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #2b283a;
+}
+
+.location--container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.location--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.location--icon {
+  width: 7px;
+  height: 13px;
+}
+
+.location {
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.location--maps-link {
+  font-size: 13px;
+  border-bottom: solid #918e9b 1.5px;
+}
+
+.location--maps-link > a {
+  color: #918e9b;
+}
+
+.date-wrapper {
+  display: flex;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.horizontal-line {
+  height: 2px;
+  margin: 0 20px;
+  background-color: #e9ecf2;
+}
