@@ -6,7 +6,7 @@
 
 .card--wrapper {
   display: flex;
-  padding: 0 20px;
+  padding: 0;
   margin: 10px 0;
   gap: 20px;
 }
@@ -74,8 +74,14 @@
   background-color: #e9ecf2;
 }
 
-/* mobile */
+/* > 900px */
+@media only screen and (min-width: 725px) {
+  .card--wrapper {
+    padding: 0 20px;
+  }
+}
 
+/* mobile */
 @media only screen and (max-width: 900px) {
   .card--wrapper {
     display: flex;
@@ -88,7 +94,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 725px) {
   .location-img {
     width: 270px;
     height: 180px;
@@ -107,17 +113,22 @@
     width: 180px;
     height: 140px;
   }
-  .card--wrapper {
-    padding: 0;
+
+  .location--container {
+    flex-direction: column;
+    gap: 5px;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 380px) {
   .location-img {
-    width: 180px;
-    height: 140px;
+    width: 150px;
+    height: 160px;
   }
-  .card--wrapper {
-    padding: 0;
+  .card {
+    padding: 2px;
+  }
+  .location--container {
+    flex-direction: column;
   }
 }
